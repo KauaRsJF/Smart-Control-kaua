@@ -3,25 +3,33 @@
 <html lang ="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Smart control Login></title>
+        <link rel="stylesheet" href="asssets/css/index.css">
     </head>
 
     <body>
-        <h1>Cadastro Smart Control</h1>
-        <form Smartcontrol ="cadastro"></form>
-            <p><label for= "Email registrado">E-mail</label></p>
-            <input type="e-mail" id="e-mail" placeholder="Insira seu e-mail" required>
-            
-            <p><label for="Senha_registrado">Senha</label></p>
-            <input type="password" id="Nome" placeholder="Digite sua senha aqui" required>
-             <p><label for="esqueci-senha">Esqueci minha senha\</label>
-             <label for="registrar">\Registrar-se</label></p>
+       <main class = "container">
+        <div class="card" id="Info-Login">
+            <h1>Smart Control</h1>
+       </div>
+        <div class="card">
+            <form action="dashboard.html" method="get" id="form-login">
+            <h2>Faça Login</h2>
+            <label for="email">Insira seu email</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+            <label for="senha">Insira sua senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" required>
+                
+            <a href="recuperacao.html">Esqueci minha senha</a>
+            <a href="cadastro.html">Registrar-se</a>
 
-             <nav class= "navbar"></nav>
-              <ul class = "links">
-              <a href="dashboard.html"><button>Logar</button></a>
-    </body>
+            <button type="submit">Entrar</button>
+            </form>
+        </div>
+       </main>
+</body>
 </html>
 
 
